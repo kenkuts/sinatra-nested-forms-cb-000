@@ -1,4 +1,4 @@
-require './environment'
+require 'environment'
 require_relative 'app/models/pirate.rb'
 require_relative 'app/models/ship.rb'
 
@@ -21,8 +21,7 @@ module FormsLab
       end
 
       @ships = Ship.all
-
-      return @pirate.name
+      return @ships
       # erb :show
     end
   end
